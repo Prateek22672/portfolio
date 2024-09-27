@@ -1,0 +1,255 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+   
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #socials-container {
+        margin-top: 40px;
+    }
+
+
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+      margin-left: 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+
+
+    
+
+    .menuButton {
+        display: block;
+        position: fixed;
+        margin-left: -20px;
+        background-color: transparent;
+        font-size: 25px;
+        outline: none;
+        border: none;
+    }
+
+
+    .offcanvas a {
+        font-family: "Inter", system-ui;
+        font-weight: 400;
+    }
+
+    .offcanvas a:first-child {
+        font-family: "Inter", system-ui;
+        margin-top: 0px;
+    }
+
+    .offcanvas-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #projects .section__text__p1,
+    #contact .section__text__p1 {
+        font-size: 1rem;
+    }
+    #projects .title,
+    #contact .title {
+        font-size: 1.5rem;
+    }
+    .projects-grid-container {
+        display: block;
+        gap: 2rem;
+        margin: 2rem auto;
+    }
+    .details-container {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: white;
+        border-radius: 1rem;
+        border: 0.1rem solid rgb(163, 163, 163);
+        text-align: center;
+    }
+    .project-img,
+    .project1,
+    .project2,
+    .project3 {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 1rem;
+    }
+    .projects-grid-container > .details-container:nth-child(3) {
+        grid-column: auto; /* Reset grid-column */
+        margin: 0 auto; /* Center the project horizontally */
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+    .btn-container button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    /* CONTACT */
+    #contact {
+        margin-top: 10vh;
+        padding: 2rem 1rem;
+        background-color: #ffffff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-info-upper-container {
+        display: block;
+        margin: 1rem auto;
+    }
+    .contact-info-container {
+        margin-bottom: 1rem;
+    }
+    .contact-info-container p {
+        font-size: 1rem;
+    }
+    .email-icon,
+    .contact-icon {
+        height: 2rem;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+    }
+    .footer-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    /* Splash Screen Styles */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* Or your background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Match the duration in JS */
+}
+
+.splash-content img {
+  width: 200px; /* Adjust size as needed */
+}
+
+
+@keyframes splashAnimation {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(1);
+  }
+}
+
+
+
+  }
